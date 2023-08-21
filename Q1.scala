@@ -4,7 +4,7 @@ object Q1 extends App {
 }
 
   class Rational(n:Int, d:Int) {
-    require(denom > 0, "Denominator must be greater than 0")
+    require(denom != 0, "Denominator cannot be 0")
     def numer = n
     def denom = d
 
