@@ -9,7 +9,7 @@ object Q2 extends App {
 }
 
   class Rational(n:Int, d:Int) {
-    require(denom > 0, "Denominator must be greater than 0")
+    require(denom != 0, "Denominator cannot be 0")
     def numer = n
     def denom = d
     def neg = new Rational(-this.numer, this.denom)
